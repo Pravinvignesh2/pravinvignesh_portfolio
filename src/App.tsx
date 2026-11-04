@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 import { ScrollProgress } from '@/components/ui/ScrollProgress/ScrollProgress';
 import { Navbar } from '@/components/layout/Navbar/Navbar';
 import { Hero } from '@/components/sections/Hero/Hero';
@@ -166,6 +167,7 @@ export default function App() {
       </AnimatePresence>
 
       <Footer />
+      <Analytics />
     </div>
   );
 }
