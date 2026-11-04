@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="120" fill="#0D0D11" />
+  <!-- Crisp Geometric Monogram "P." -->
+  <g transform="translate(140, 116)">
+    <!-- Main Vertical Stem -->
+    <rect x="0" y="0" width="56" height="280" rx="12" fill="#F8FAFC" />
+    <!-- P Loop path -->
+    <path d="M 56 0 H 130 C 180 0 216 32 216 82 C 216 132 180 164 130 164 H 56 Z" fill="#F8FAFC" />
+    <!-- Inner P Counter -->
+    <path d="M 56 48 H 122 C 148 48 168 62 168 82 C 168 102 148 116 122 116 H 56 Z" fill="#0D0D11" />
+    <!-- Accent Period Dot "." -->
+    <circle cx="236" cy="252" r="28" fill="#2563EB" />
+  </g>
+</svg>

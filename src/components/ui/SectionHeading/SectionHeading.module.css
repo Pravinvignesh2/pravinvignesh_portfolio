@@ -1,0 +1,41 @@
+.wrapper {
+  margin-bottom: var(--space-12);
+}
+
+.kicker {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--color-text-primary);
+  text-wrap: balance;
+  margin-bottom: var(--space-4);
+}
+
+.subtitle {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  max-width: 65ch;
+}
+
+.centered {
+  text-align: center;
+}
+
+.centered .subtitle {
+  margin-left: auto;
+  margin-right: auto;
+}

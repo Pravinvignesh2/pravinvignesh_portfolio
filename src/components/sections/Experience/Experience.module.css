@@ -1,0 +1,197 @@
+.experienceSection {
+  padding: var(--space-20) 0 var(--space-24);
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  position: relative;
+}
+
+/* Full-width Natural Horizontal Header */
+.stickyHeaderGroup {
+  margin-bottom: var(--space-8);
+  display: flex;
+  flex-direction: column;
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-1);
+  display: block;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+  max-width: 65ch;
+  margin: 0;
+}
+
+/* Full-width Content Area */
+.contentWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Timeline Layout */
+.timelineContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  width: 100%;
+  max-width: 960px;
+}
+
+.timelineTrack {
+  position: absolute;
+  top: 12px;
+  bottom: 24px;
+  left: 19px;
+  width: 2px;
+  background-color: var(--color-border);
+}
+
+.timelineCard {
+  position: relative;
+  padding-left: 54px;
+}
+
+.timelineNode {
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-bg-surface);
+  border: 2px solid var(--color-border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all var(--duration-fast) var(--ease-apple);
+}
+
+.timelineNodeActive {
+  border-color: var(--color-accent);
+}
+
+.timelineNodeActiveInner {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-accent);
+}
+
+.cardInner {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-apple);
+}
+
+.cardInner:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.cardTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-2);
+}
+
+.period {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.categoryBadge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.roleTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+}
+
+.organization {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.responsibilitiesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.responsibilityItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
+
+.bullet {
+  color: var(--color-accent);
+  font-weight: bold;
+  user-select: none;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 640px) {
+  .stickyHeaderGroup {
+    position: static;
+    padding-top: 0;
+  }
+
+  .timelineTrack {
+    left: 11px;
+  }
+  .timelineCard {
+    padding-left: 36px;
+  }
+  .timelineNode {
+    left: 3px;
+  }
+}

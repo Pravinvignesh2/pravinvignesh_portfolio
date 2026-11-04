@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.standard {
+  max-width: var(--container-max-width);
+}
+
+.narrow {
+  max-width: var(--container-narrow-width);
+}
+
+.full {
+  max-width: 100%;
+}
